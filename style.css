@@ -1,0 +1,249 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* scrollbar */
+
+/*
+ *  STYLE 5
+ */
+
+#style-5::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    background-color: black;
+}
+
+#style-5::-webkit-scrollbar {
+    width: 3px;
+    /* background-color: black; */
+}
+
+#style-5::-webkit-scrollbar-thumb {
+    background-color: grey;
+
+    /* background-image: black; */
+}
+
+.nav {
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 6, 6);
+    font-size: 30px;
+
+    text-decoration: none;
+    width: 10rem;
+    /* padding: 1rem; */
+    height: 100vh;
+    position: fixed;
+    /* top: 4.5rem; */
+}
+.nav > a {
+    text-decoration: none;
+    color: #63676a;
+    /* border: solid 0.1px red; */
+    width: 100%;
+    padding: 1rem 0;
+    transition: ease 0.5s;
+}
+a:hover {
+    background-color: #242426;
+    color: white;
+}
+#home {
+    width: calc(100%-10rem);
+    height: 100vh;
+    background-color: rgb(7, 6, 6);
+    border: solid 0.1px rgb(7, 6, 6);
+    padding-left: 10rem;
+}
+
+#home > div > div {
+    width: 45vw;
+}
+#home > div > span {
+    width: 45vw;
+    /* height: 100%; */
+}
+#home > div > div > img {
+    width: 100%;
+}
+
+#home > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#home > div > span > h3 {
+    /* font-size: 200%; */
+    color: white;
+    padding: 1rem;
+}
+#home > div > span > h1 {
+    /* font-size: 200%; */
+    color: white;
+    padding: 1rem;
+    font-size: 80px;
+}
+#home > div > span > h5 {
+    /* font-size: 200%; */
+    color: white;
+    padding: 1rem;
+    font-size: 35px;
+    text-align: end;
+}
+#about {
+    /* width: 100%; */
+    width: calc(100%-10rem);
+    height: 100vh;
+    background-color: rgb(7, 6, 6);
+    border: solid 0.1px rgb(7, 6, 6);
+    padding-left: 10rem;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+}
+#about > div {
+    /* display: flex; */
+    /* width: 100; */
+    height: 100vh;
+    color: white;
+}
+
+.title {
+    font-size: 35px;
+    width: 100%;
+    height: 30%;
+}
+.title > span > #child {
+    margin-left: 2.5em;
+}
+#img-about > img {
+    height: 10%;
+}
+#img-about {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+#about > div > .body {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+#desc-about {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#desc-about {
+    width: 50%;
+}
+.border {
+    border: solid white 0.1px;
+    width: 50%;
+}
+#contact {
+    /* width: 100%; */
+    width: calc(100%-10rem);
+    height: 100vh;
+    background-color: rgb(7, 6, 6);
+    border: solid 0.1px rgb(7, 6, 6);
+    padding-left: 10rem;
+}
+
+#contact-body {
+    width: calc(100%-10rem);
+    background-color: rgb(7, 6, 6);
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+#contact-div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+#contact-div-1 div {
+    width: 80%;
+    height: 80%;
+    background-image: url("./Resource/India_Store_1000x1000_1.jpg");
+}
+#contact-div-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+}
+#contact-div-2 div {
+    width: 80%;
+    height: 80%;
+    border-top: solid white 5px;
+    border-left: solid white 5px;
+    border-bottom: solid white 5px;
+
+}
+#shop {
+    width: calc(100%-10rem);
+    height: 100vh;
+    background-color: rgb(7, 6, 6);
+    border: solid 0.1px rgb(7, 6, 6);
+    padding-left: 10rem;
+}
+
+#shop-body {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.product {
+    color: white;
+    width: 85%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.space-start {
+    justify-content: flex-start;
+}
+
+.relative {
+    position: relative;
+}
+.relative-top {
+    top: 10%;
+}
+.relative-bottom {
+    bottom: 10%;
+}
+.shop-title {
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+}
+.test {
+    border: solid black 0.001px;
+}
